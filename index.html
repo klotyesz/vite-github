@@ -10,10 +10,51 @@
         border: 1px solid black;
         border-collapse: collapse;
       }
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        gap: 20px;
+      }
+
+      
+      form {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      
+      table {
+        border-collapse: collapse;
+        width: 500px;
+        text-align: left;
+      }
+
+      table, th, td {
+        border: 1px solid black;
+      }
+
+      th, td {
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
     </style>
   </head>
   <body>
-    <form>
+    <form id="urlap">
       Busz típusa: <br>
       <input type="text" id="tipus"><br>
       Menetidő (perc): <br>
