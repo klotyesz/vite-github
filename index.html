@@ -5,10 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <style>
+      table, tr,td, th{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <h1>Hello World!</h1>
+    <form>
+      Busz típusa: <br>
+      <input type="text" id="tipus"><br>
+      Menetidő (perc): <br>
+      <input type="text" id="menetido"><br>
+      Állomások száma: <br>
+      <input type="text" id="allomas"><br>
+      Üzemeltető: <br>
+      <input type="text" id="uzemelteto"><br>
+      Jegy ára (Ft): <br>
+      <input type="number" id="ar"><br>
+      <button id="felvetel">Felvétel</button>
+    </form>
+  
+    <div id="adatmegjelenites"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
